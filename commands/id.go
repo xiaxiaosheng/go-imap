@@ -38,17 +38,12 @@ func (cmd *ID) Parse(fields []interface{}) error {
 		return errors.New("Not enough arguments")
 	}
 
-	var err error
 	cmd.IAM = make(map[string]string)
 	for i := 0; i < len(fields); i++ {
 		var s1 string
 		var s2 string
-		if s1, err = imap.ParseString(fields[i]); err != nil {
-			return err
-		}
-		if s2, err = imap.ParseString(fields[i+1]); err != nil {
-			return err
-		}
+		s1 = fmt.Sprintf("%v", fields[i])
+		s2 = fmt.Sprintf("%v", fields[i+1])
 		if i == 0 && strings.HasPrefix(s1, "(") {
 			s1 = strings.TrimPrefix(s1, "(")
 		}
