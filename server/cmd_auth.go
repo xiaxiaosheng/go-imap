@@ -3,10 +3,10 @@ package server
 import (
 	"errors"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/backend"
-	"github.com/emersion/go-imap/commands"
-	"github.com/emersion/go-imap/responses"
+	"github.com/xiaxiaosheng/go-imap"
+	"github.com/xiaxiaosheng/go-imap/backend"
+	"github.com/xiaxiaosheng/go-imap/commands"
+	"github.com/xiaxiaosheng/go-imap/responses"
 )
 
 // imap errors in Authenticated state.

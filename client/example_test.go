@@ -8,8 +8,8 @@ import (
 	"net/mail"
 	"time"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/client"
+	"github.com/xiaxiaosheng/go-imap"
+	"github.com/xiaxiaosheng/go-imap/client"
 )
 
 func ExampleClient() {

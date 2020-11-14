@@ -6,8 +6,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/backend/backendutil"
+	"github.com/xiaxiaosheng/go-imap"
+	"github.com/xiaxiaosheng/go-imap/backend/backendutil"
 	"github.com/emersion/go-message"
 	"github.com/emersion/go-message/textproto"
 )

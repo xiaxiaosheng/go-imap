@@ -1,4 +1,4 @@
-module github.com/emersion/go-imap
+module github.com/xiaxiaosheng/go-imap
 
 go 1.13
 

@@ -8,7 +8,7 @@ import (
 	nettextproto "net/textproto"
 	"strings"
 
-	"github.com/emersion/go-imap"
+	"github.com/xiaxiaosheng/go-imap"
 	"github.com/emersion/go-message/textproto"
 )
 
