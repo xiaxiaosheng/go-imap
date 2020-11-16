@@ -253,13 +253,13 @@ func (c *Client) Append(mbox string, flags []string, date time.Time, msg imap.Li
 	return status.Err()
 }
 
-func (c *Client) ID(iam map[string]string) error {
+func (c *Client) ID(params []interface{}) error {
 	if err := c.ensureAuthenticated(); err != nil {
 		return err
 	}
 
 	cmd := &commands.ID{
-		IAM: iam,
+		Params: params,
 	}
 	status, err := c.execute(cmd, nil)
 	if err != nil {
